@@ -1,0 +1,19 @@
+# Install a matching CUDA-enabled torch build separately.
+torch
+transformers
+accelerate
+peft
+torchmetrics
+timm
+tensorboard
+x-transformers
+numpy
+tqdm
+pyyaml
+python-box
+pandas
+pyarrow
+bitsandbytes
+git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup
+# E1 and the GCP-VQVAE inference package are optional external dependencies.
+# See README.md before running sequence-to-structure or coordinate decoding.

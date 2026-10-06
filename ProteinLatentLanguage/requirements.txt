@@ -1,0 +1,20 @@
+# Install a matching CUDA-enabled torch build separately.
+torch
+transformers
+accelerate
+peft
+torchmetrics
+timm
+esm
+huggingface-hub
+tensorboard
+x-transformers
+vector-quantize-pytorch
+numpy
+tqdm
+pyyaml
+python-box
+pandas
+bitsandbytes
+schedulefree
+git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup

@@ -1,0 +1,78 @@
+# Saved run: results/pll_esm150/2025-11-02__13-54-07
+# Training parameters preserved. Data/output paths are portable examples.
+fix_seed: 0
+checkpoints_every_epoch: 1
+checkpoint_every_steps: 32000
+tensorboard_log: true
+tqdm_progress_bar: false
+accelerate_timeout_minutes: 60
+result_path: results/scaling/pll/d640_l12
+find_unused_parameters: false
+resume:
+  enable: false
+  resume_path: results/to/checkpoints.pth
+  restart_optimizer: true
+model:
+  compile_model: true
+  max_len: 1024
+  data_type: pll
+  dimension: 640
+  emb_dropout: 0.0
+  ff_mult: 4
+  layer_dropout: 0.0
+  attn_dropout: 0.0
+  ff_dropout: 0.0
+  depth: 12
+  heads: 5
+  rotary_pos_emb: true
+  attn_flash: true
+  attn_kv_heads: 5
+  qk_norm: true
+  pre_norm: true
+  residual_attn: false
+  num_memory_tokens: 0
+  tie_embedding: true
+  freeze_parameters: false
+train_settings:
+  data_path: data/uniref50_pll/train_set.csv
+  num_epochs: 4
+  shuffle: true
+  mixed_precision: bf16
+  batch_size: 16
+  num_workers: 16
+  persistent_workers: false
+  pin_memory: false
+  drop_last: true
+  grad_accumulation: 1
+  max_task_samples: 100000000
+  gradient_norm_logging_freq: 100
+  log_separate_grad_norms: false
+  adaptive_loss_coefficient: false
+  adaptive_coefficient_bounds:
+    min: 0.1
+    max: 10.0
+valid_settings:
+  data_path: data/uniref50_pll/valid_set.csv
+  do_every_epochs: 1
+  do_every_steps: 2000
+  batch_size: 16
+  num_workers: 4
+  persistent_workers: false
+  pin_memory: true
+  drop_last: true
+  shuffle: false
+optimizer:
+  name: adam
+  lr: 1e-4
+  weight_decouple: true
+  weight_decay: 1e-1
+  eps: 1e-7
+  beta_1: 0.9
+  beta_2: 0.98
+  use_8bit_adam: true
+  grad_clip_norm: 1
+  decay:
+    warmup: 2048
+    min_lr: 1e-5
+    gamma: 0.2
+    num_restarts: 1

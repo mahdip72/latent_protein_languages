@@ -1,0 +1,117 @@
+# Saved run: results/structure/2026-02-09__15-50-09
+# Training parameters preserved. Data/output paths are portable examples.
+fix_seed: 0
+checkpoints_every_epoch: 1
+checkpoint_every_steps: 64000
+tensorboard_log: true
+tqdm_progress_bar: false
+accelerate_timeout_minutes: 60
+result_path: results/continuation/sllm
+find_unused_parameters: false
+resume:
+  enable: true
+  resume_path: results/structure/2026-01-29__01-10-22/checkpoints/epoch_10.pth
+  restart_optimizer: false
+model:
+  compile_model: true
+  max_len: 1024
+  data_type: structure
+  dimension: 2048
+  emb_dropout: 0.0
+  ff_mult: 4
+  layer_dropout: 0.0
+  attn_dropout: 0.0
+  ff_dropout: 0.0
+  depth: 34
+  heads: 16
+  rotary_pos_emb: true
+  attn_flash: true
+  attn_kv_heads: 4
+  qk_norm: true
+  pre_norm: true
+  residual_attn: false
+  num_memory_tokens: 0
+  tie_embedding: true
+  freeze_parameters: false
+  condition_tokens:
+    length:
+      enabled: true
+      probability: 0.5
+      start_epoch: 1
+    c2n:
+      enabled: false
+      probability: 0.3
+      start_epoch: 1
+    sequence_to_structure:
+      enabled: false
+      probability: 1.0
+      start_epoch: 1
+      protein_encoder_context:
+        enable: false
+        model_type: e1
+        model_name: Profluent-Bio/E1-150m
+        fine_tune:
+          enable: false
+          last_layers_trainable: 1
+      use_pll: false
+      map_missing_residue_tokens: true
+      augmentation:
+        probability: 0.05
+        max_percentage: 0.15
+      include_structure_in_validation: true
+      mask_non_structure_loss: true
+    structure_to_sequence:
+      enabled: false
+      probability: 1.0
+      start_epoch: 1
+      use_pll: true
+      map_missing_residue_tokens: true
+      augmentation:
+        probability: 0.0
+        max_percentage: 0.0
+      include_sequence_in_validation: true
+      mask_non_sequence_loss: true
+train_settings:
+  data_path: data/structure_tokens/train_set.csv
+  num_epochs: 2
+  shuffle: true
+  mixed_precision: bf16
+  batch_size: 16
+  num_workers: 16
+  persistent_workers: false
+  pin_memory: false
+  drop_last: true
+  grad_accumulation: 1
+  max_task_samples: 80000000
+  gradient_norm_logging_freq: 100
+  log_separate_grad_norms: false
+  adaptive_loss_coefficient: false
+  adaptive_coefficient_bounds:
+    min: 0.1
+    max: 10.0
+valid_settings:
+  data_path: data/structure_tokens/valid_set.csv
+  do_every_epochs: 1
+  do_every_steps: 16000
+  batch_size: 16
+  num_workers: 4
+  persistent_workers: true
+  pin_memory: true
+  drop_last: true
+  shuffle: false
+optimizer:
+  name: adam
+  lr: 1e-4
+  weight_decouple: true
+  weight_decay: 1e-1
+  eps: 1e-7
+  beta_1: 0.9
+  beta_2: 0.98
+  use_8bit_adam: true
+  grad_clip_norm: 1
+  decay:
+    warmup: 32000
+    min_lr: 1e-5
+    gamma: 0.2
+    num_restarts: 1
+    cosine_end_epoch: null

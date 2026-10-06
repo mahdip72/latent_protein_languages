@@ -1,0 +1,13 @@
+# Confidence-window and consensus settings recorded in the manuscript experiment notes.
+deepconf_selection:
+  enabled: true
+  score: deepconf_top10pct_group_entropy_raw
+  group_size: 256
+  group_stride: 1
+  bottom_percent: 0.10
+  tail_size: 64
+  consensus:
+    enabled: true
+    keep_percent: 0.50
+    min_keep: 2
+    metric: token_similarity

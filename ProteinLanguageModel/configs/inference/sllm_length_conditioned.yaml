@@ -1,0 +1,49 @@
+# Length-conditioned sampling example. This script does not run ProteinBench.
+trained_model_dir: results/structure/2026-02-09__15-50-09
+config_filename: config.yaml
+checkpoint_path: checkpoints/epoch_2.pth
+output_base_dir: inference_results/sllm_length100
+output_csv_filename: generated_sequences.csv
+num_samples: 100
+batch_size: 32
+max_generation_length: 1024
+ensure_num_samples_with_eos: false
+exclude_max_length_sequences: false
+sequence_entropy_filter:
+  enabled: false
+  min_entropy: 1.5
+sampling:
+  temperature: 1.0
+  filter_logits_fn: top_p
+  filter_kwargs:
+    thres: 0.9
+merge_joiner: ' '
+condition_tokens:
+  length:
+    enabled: true
+    fixed_value: 100
+  c2n:
+    enabled: false
+mixed_precision: bf16
+tqdm_progress_bar: false
+num_workers: 4
+compile_model:
+  enabled: false
+  mode: null
+vqvae_decode:
+  enabled: false
+  trained_model_dir: ../ProteinLatentLanguage/structure_tokenizer_runs/lite_2025-12-30__18-09-47
+  checkpoint_path: checkpoints/best_valid.pth
+  config_vqvae: config_vqvae.yaml
+  config_encoder: config_gcpnet_encoder.yaml
+  config_decoder: config_geometric_decoder.yaml
+  batch_size: 128
+  shuffle: false
+  num_workers: 4
+  max_length: null
+  deterministic: false
+  seed: 0
+  compile_model:
+    enabled: true
+    mode: null
+    backend: inductor

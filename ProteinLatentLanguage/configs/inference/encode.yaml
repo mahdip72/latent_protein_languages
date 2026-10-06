@@ -1,0 +1,17 @@
+trained_model_dir: results/final/stage_2/2025-10-24__21-30-50
+config_filename: config.yaml
+checkpoint_path: checkpoints/best_valid.pth
+data_path: data/sequences.csv
+protein_column_name: Amino Acid Sequence
+output_base_dir: inference_encode_results
+batch_size: 32
+shuffle: false
+num_workers: 4
+max_task_samples: null
+max_length: null
+mixed_precision: bf16
+tqdm_progress_bar: true
+vq_indices_csv_filename: vq_indices.csv
+compile_model:
+  enabled: false
+  mode: null

@@ -1,0 +1,3 @@
+# Keep source and configuration hashes stable across platforms.
+* text=auto eol=lf
+*.png binary

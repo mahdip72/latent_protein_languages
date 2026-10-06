@@ -1,0 +1,129 @@
+# Saved run: results/final/stage_2/2025-10-24__21-30-50
+# Training parameters preserved. Data/output paths are portable examples.
+fix_seed: 0
+checkpoints_every: 64
+tensorboard_log: true
+tqdm_progress_bar: false
+accelerate_timeout_minutes: 10
+result_path: results/pll_stage2
+find_unused_parameters: false
+resume:
+  enable: true
+  resume_path: results/final/2025-10-21__16-31-28/checkpoints/best_valid.pth
+  restart_optimizer: true
+  discard_decoder_weights: true
+model:
+  compile_model: true
+  max_len: 1024
+  protein_encoder:
+    model_type: esm_v2
+    model_name: facebook/esm2_t30_150M_UR50D
+    quantization_4_bit: false
+    protrek_checkpoint: false
+    fine_tune:
+      enable: false
+      last_layers_trainable: 1
+  vqvae:
+    encoder:
+      dimension: 768
+      ff_mult: 4
+      depth: 12
+      heads: 12
+      rotary_pos_emb: true
+      attn_flash: true
+      attn_kv_heads: 3
+      qk_norm: true
+      pre_norm: true
+      residual_attn: false
+      num_memory_tokens: 0
+      causal: false
+      freeze_parameters: true
+    vector_quantization:
+      enabled: true
+      type: learnable
+      adaptive_coefficient: true
+      freeze_parameters: true
+    decoder:
+      enabled: true
+      dimension: 768
+      ff_mult: 4
+      depth: 12
+      heads: 12
+      rotary_pos_emb: true
+      attn_flash: true
+      attn_kv_heads: 3
+      qk_norm: true
+      pre_norm: true
+      residual_attn: false
+      num_memory_tokens: 0
+      causal: false
+      freeze_parameters: false
+      classifier_head:
+        enabled: true
+        num_classes: 21
+train_settings:
+  data_path: data/uniref50/train_set.csv
+  num_epochs: 8
+  shuffle: true
+  sample_weight: false
+  mixed_precision: bf16
+  batch_size: 64
+  num_workers: 8
+  persistent_workers: false
+  pin_memory: false
+  grad_accumulation: 1
+  max_task_samples: 20000000
+  gradient_norm_logging_freq: 50
+  log_separate_grad_norms: true
+  adaptive_loss_coefficient: true
+  adaptive_coefficient_bounds:
+    min: 0.01
+    max: 100.0
+  losses:
+    cross_entropy:
+      enabled: false
+      coefficient: 0.1
+      adaptive_coefficient: true
+    mse:
+      enabled: false
+      coefficient: 10.0
+      adaptive_coefficient: true
+    cosine_similarity:
+      enabled: false
+      coefficient: 1.0
+      adaptive_coefficient: true
+    next_token_prediction:
+      enabled: false
+      weight: 0.001
+      adaptive_coefficient: true
+      blocks: 1
+    classification:
+      enabled: true
+      coefficient: 5.0
+      adaptive_coefficient: true
+valid_settings:
+  data_path: data/uniref50/valid_set.csv
+  do_every: 1
+  batch_size: 16
+  num_workers: 4
+  persistent_workers: false
+  pin_memory: true
+test_settings:
+  data_path: data/uniref50/test_set.csv
+  batch_size: 1
+  num_workers: 2
+optimizer:
+  name: adam
+  lr: 1e-4
+  weight_decouple: true
+  weight_decay: 1e-2
+  eps: 1e-7
+  beta_1: 0.9
+  beta_2: 0.98
+  use_8bit_adam: true
+  grad_clip_norm: 1
+  decay:
+    warmup: 4096
+    min_lr: 1e-6
+    gamma: 0.2
+    num_restarts: 1

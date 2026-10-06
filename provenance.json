@@ -1,0 +1,1125 @@
+{
+  "sources": [
+    {
+      "file": "ProteinLatentLanguage/inference_decode.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "inference_decode.py",
+      "source_sha256": "d6c81b2d751be5cbb8307f204a31784bfe8576f1c0bd9fd957a3473b18ac94a4",
+      "release_sha256": "6f2b8d8850882126ad95d3647b1f9b0f1398a3f5a7f0bee63bae421396814ad3"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/utils.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/utils.py",
+      "source_sha256": "cfc1609bf47a1d32dfda9b5357434fedadcc03fc8d65ae4c296e8161a134f899",
+      "release_sha256": "3e49f5879866fd10214541bbec821e1c3e736ae082e7304c1a58231be371ab7e"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/model.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/model.py",
+      "source_sha256": "0dc37f8f42612a2993dd538de399f1c1d302bf35c43f83350e163cfa73116287",
+      "release_sha256": "e7c6dce270996382a6b11f7e3a3789f60c67ab2b6238be42869fe924899405e3"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/log.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/log.py",
+      "source_sha256": "6123e58aedf378a664b8b44e4a383a788c90960712be86d7202d1fc2f67a70bb",
+      "release_sha256": "6123e58aedf378a664b8b44e4a383a788c90960712be86d7202d1fc2f67a70bb"
+    },
+    {
+      "file": "ProteinLatentLanguage/models/super_model.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "models/super_model.py",
+      "source_sha256": "0f330a58b22d64b5814757ea42a6c6bd80d89884828e60dfd496168b2aca0c80",
+      "release_sha256": "2bbc5d388ce8945a0f00654b145b7c773de1209b99ad1a8f04343d85b10ea922"
+    },
+    {
+      "file": "ProteinLatentLanguage/models/vqvae.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "models/vqvae.py",
+      "source_sha256": "5d4d80a59a8be20de8de7ada57763eab4161773238ca206434c8b431bbb22bb7",
+      "release_sha256": "5d4d80a59a8be20de8de7ada57763eab4161773238ca206434c8b431bbb22bb7"
+    },
+    {
+      "file": "ProteinLatentLanguage/inference_encode.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "inference_encode.py",
+      "source_sha256": "fbf0d87d4903e0380c5369ce40b7efc030eaacee0c663eb448c6fe3cfa86b38b",
+      "release_sha256": "2185426ff70c1b848b4bff6bb97f7acf13d960b308798b0a1f6b4b8b1e671d6c"
+    },
+    {
+      "file": "ProteinLatentLanguage/data/dataset.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "data/dataset.py",
+      "source_sha256": "312ccf1d91d36e6a18da56fd2f032bd244f331d5e0e5cea3f024171ea7e037ac",
+      "release_sha256": "312ccf1d91d36e6a18da56fd2f032bd244f331d5e0e5cea3f024171ea7e037ac"
+    },
+    {
+      "file": "ProteinLatentLanguage/train.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "train.py",
+      "source_sha256": "5578e5093f2d8ae799ed3a5ddaf622ee27e884b9d4ddaac6cc51fe8ebb359bae",
+      "release_sha256": "2cb2b695a853d3d289a21a1a856a305a1144f5f33fd870e650fa3de529633551"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/training_helpers.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/training_helpers.py",
+      "source_sha256": "22a6089052b5f0946580e6f9f498e90cff2f6e676c365c58e11bd7cf6d34bf45",
+      "release_sha256": "22a6089052b5f0946580e6f9f498e90cff2f6e676c365c58e11bd7cf6d34bf45"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/metrics.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/metrics.py",
+      "source_sha256": "9226d260cdad2cef02270a1af3e45a726e32a416fcfbbf9532a0af8562ebca85",
+      "release_sha256": "9226d260cdad2cef02270a1af3e45a726e32a416fcfbbf9532a0af8562ebca85"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/loss.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/loss.py",
+      "source_sha256": "59a9bad87e5cd3e67878314ad1d58ec9d5c520c705b9b13b6429b57e9cfa19d7",
+      "release_sha256": "59a9bad87e5cd3e67878314ad1d58ec9d5c520c705b9b13b6429b57e9cfa19d7"
+    },
+    {
+      "file": "ProteinLatentLanguage/utils/optimizer.py",
+      "archive_project": "ProteinLatentLanguage",
+      "revision": "299e14419770862325a02a85a8b31302eac1efed",
+      "source_path": "utils/optimizer.py",
+      "source_sha256": "6e310469d18ef7138660baf29bd6e7a152f581fc0366be29bfd4afba9bd1ae06",
+      "release_sha256": "6e310469d18ef7138660baf29bd6e7a152f581fc0366be29bfd4afba9bd1ae06"
+    },
+    {
+      "file": "ProteinLanguageModel/inference_sequence_to_structure.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "inference_sequence_to_structure.py",
+      "source_sha256": "a0740b95838b53dd6b93f30eee7c8104c22cfdf4e8b1ea1d565499aa0c634952",
+      "release_sha256": "cb888077b7a7708e562c26dfd8c2958e11a090ae1f5b8f7d7cb4003bcb69c2f3"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/utils.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/utils.py",
+      "source_sha256": "3da9beecdebace72e2c88a2a9e88e102b646c09e29b587495627896aabb6db6f",
+      "release_sha256": "7833a4dbd39b2188def8aee340f46ec015936ecd985938d7e7b159f7d5e8fb8e"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/model.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/model.py",
+      "source_sha256": "1f9eafbde0f86eeb0686c8b2fc8518ab5497338092e7cdb17c6c1c29229dac47",
+      "release_sha256": "1f9eafbde0f86eeb0686c8b2fc8518ab5497338092e7cdb17c6c1c29229dac47"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/log.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/log.py",
+      "source_sha256": "97f030492b5fb81ce2cf0eed1165c086a4ed3e945692ef5284ccc2b2e26a36bd",
+      "release_sha256": "97f030492b5fb81ce2cf0eed1165c086a4ed3e945692ef5284ccc2b2e26a36bd"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/inference/sequence_to_structure.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/inference/sequence_to_structure.py",
+      "source_sha256": "e0f2ce1a6ed8e9f5a07c2a10c8226d6f609f4b551bd63ae2747af243a2198d35",
+      "release_sha256": "462ae8935d17824d3f49f5faf0a0663d6f94af6e627a3f2c6ebfe722a90ae8bc"
+    },
+    {
+      "file": "ProteinLanguageModel/data/dataset.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "data/dataset.py",
+      "source_sha256": "2bd45b5831ad3df9f20a45a9efec6405b40e41a7b61a073d37d60ebb60a1d411",
+      "release_sha256": "2f92cf67c9cb67ed088f60deb19b018951ccda942febd5023fee48e275ce7ac6"
+    },
+    {
+      "file": "ProteinLanguageModel/data/utils.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "data/utils.py",
+      "source_sha256": "4815712d0ee019f101d20863740fad930ff1b868b1e7b1198c63bcecf831b58d",
+      "release_sha256": "4815712d0ee019f101d20863740fad930ff1b868b1e7b1198c63bcecf831b58d"
+    },
+    {
+      "file": "ProteinLanguageModel/data/tokenizer.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "data/tokenizer.py",
+      "source_sha256": "6d7e0247329ebf71f5d540b2557af3b81b5729cc7b64c82e86c1bdb1f0083366",
+      "release_sha256": "aaad4909c6cc8ef634024f8ad6d993e04673873e516041af96e5bb503c3c4c76"
+    },
+    {
+      "file": "ProteinLanguageModel/models/super_model.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "models/super_model.py",
+      "source_sha256": "08d38b5b4f38a5e1500961ae0222f2ab0a3d6b601bbb8dea9e1152087449bbdc",
+      "release_sha256": "7d8fc9f54cdb804ff85308f9263437c102c6490e70910afec9e7486420308862"
+    },
+    {
+      "file": "ProteinLanguageModel/models/e1_compile_patch.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "models/e1_compile_patch.py",
+      "source_sha256": "4818b15c3df913a2e5467ad28e77adda5546c7cbd0fea7b5c76276fb5d18e282",
+      "release_sha256": "4818b15c3df913a2e5467ad28e77adda5546c7cbd0fea7b5c76276fb5d18e282"
+    },
+    {
+      "file": "ProteinLanguageModel/inference_generate_de_novo.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "inference_generate_de_novo.py",
+      "source_sha256": "0b1d621ef993b9f6a85b8436cd32a491007cdaf9873962fef50826b0d1fa0fc8",
+      "release_sha256": "db293f7a457e1b724867396a8a1d1e34c4828df77f8996bcf52e1448c68db194"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/inference/de_novo.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/inference/de_novo.py",
+      "source_sha256": "d19b3b93f061ba3d366cbf07aa7074fabfb4cbcfd32711da896ffe55443a5224",
+      "release_sha256": "d19b3b93f061ba3d366cbf07aa7074fabfb4cbcfd32711da896ffe55443a5224"
+    },
+    {
+      "file": "ProteinLanguageModel/train.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "train.py",
+      "source_sha256": "3c3e002478cb0793ac7d20795655f3068b488176c4a3edf7c4e409e2e52cb543",
+      "release_sha256": "336a79cdd8117687cc1c07270136affb7c9321813987608249a52358a5d908e6"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/loss.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/loss.py",
+      "source_sha256": "1c9608f6ddccf7fbc74cb2be4fbc24d1cf1c933e95c2e7058483d263d5852d05",
+      "release_sha256": "1c9608f6ddccf7fbc74cb2be4fbc24d1cf1c933e95c2e7058483d263d5852d05"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/optimizer.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/optimizer.py",
+      "source_sha256": "4598310f8cabdf326932a7296910dddf52bb76a44d6ccca3ccb775de13421318",
+      "release_sha256": "4598310f8cabdf326932a7296910dddf52bb76a44d6ccca3ccb775de13421318"
+    },
+    {
+      "file": "ProteinLanguageModel/utils/inference/confidence_selection.py",
+      "archive_project": "ProteinLanguageModel",
+      "revision": "9e1720e6adb5f6b216688e80a98f3566f3e4ee8f",
+      "source_path": "utils/evaluation/sequence_to_structure_eval.py",
+      "extracted_symbols": [
+        "_mean_or_nan",
+        "_parse_metric_list",
+        "_resolve_deepconf_selection_config",
+        "_select_deepconf_candidate",
+        "_sliding_window_means",
+        "_token_sequence_similarity",
+        "compute_deepconf_entropy_scores",
+        "DEEPCONF_SCORE_FIELDS"
+      ],
+      "source_sha256": "966cf4c8f7a6c6321060a8ab56132a2a04fa7d694c9fdf8f26724e724cfca9d1",
+      "release_sha256": "753ec92e66b369de565a03af7a97e9b2742b716e45965c283027600b7e39a672"
+    }
+  ],
+  "configs": [
+    {
+      "file": "ProteinLatentLanguage/configs/stage1/config.yaml",
+      "archive_project": "ProteinLatentLanguage",
+      "run": "results/final/2025-10-21__16-31-28",
+      "role": "PLL Stage 1 reconstruction",
+      "source_config_sha256": "ff0c8dd84a65e80a401f849b44a2d59ed0a1e3bf16cd4e3515ad8208962b51b1",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/pll_stage1"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        },
+        {
+          "key": "test_settings.data_path",
+          "release": "data/uniref50/test_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_64.pth"
+      ]
+    },
+    {
+      "file": "ProteinLatentLanguage/configs/stage2/config.yaml",
+      "archive_project": "ProteinLatentLanguage",
+      "run": "results/final/stage_2/2025-10-24__21-30-50",
+      "role": "PLL Stage 2 residue decoding",
+      "source_config_sha256": "2589dc6b8761a14a71d32f5f282cc4f59d0a73f0577f92e9777e9aee4582d371",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/pll_stage2"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        },
+        {
+          "key": "test_settings.data_path",
+          "release": "data/uniref50/test_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/aa/d512_l6/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/amino_acid/2025-10-25__21-59-08",
+      "role": "aa scaling model",
+      "source_config_sha256": "ca9d6125591f069c5b0208796c213c25118dcff0e38cdcd6857e59f9534e9ce7",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/aa/d512_l6"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_160000.pth",
+        "steps_192000.pth",
+        "steps_224000.pth",
+        "steps_256000.pth",
+        "steps_288000.pth",
+        "steps_32000.pth",
+        "steps_320000.pth",
+        "steps_352000.pth",
+        "steps_384000.pth",
+        "steps_416000.pth",
+        "steps_448000.pth",
+        "steps_480000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth",
+        "steps_96000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/aa/d640_l12/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/amino_acid/2025-10-26__10-34-30",
+      "role": "aa scaling model",
+      "source_config_sha256": "32061f8af8c3a0d25a878da8c6ff65021d0e660dcac0827ce0c910dc7de2482f",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/aa/d640_l12"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_160000.pth",
+        "steps_192000.pth",
+        "steps_224000.pth",
+        "steps_256000.pth",
+        "steps_288000.pth",
+        "steps_32000.pth",
+        "steps_320000.pth",
+        "steps_352000.pth",
+        "steps_384000.pth",
+        "steps_416000.pth",
+        "steps_448000.pth",
+        "steps_480000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth",
+        "steps_96000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/aa/d768_l19/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/amino_acid/2025-10-27__13-03-38",
+      "role": "aa scaling model",
+      "source_config_sha256": "b049979d2b3ef4096e13a4505eb721b113b90a82303a388899aded9ed665f8b1",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/aa/d768_l19"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/aa/d1024_l26/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/amino_acid/2025-10-29__13-34-48",
+      "role": "aa scaling model",
+      "source_config_sha256": "e1b9de930b457cfa9b405ceecbcff6e0e9fea13ebcf19895617b1b5c0739e258",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/aa/d1024_l26"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/aa/d1536_l27/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/amino_acid/2025-11-22__12-26-17",
+      "role": "aa scaling model",
+      "source_config_sha256": "411d4f7316caac3457fdbf6c03e7148e38a21cc6cf0d35e0e0e3c6a6ec27dd7f",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/aa/d1536_l27"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/aa/d2048_l34/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/amino_acid/2025-11-27__07-49-39",
+      "role": "aa scaling model",
+      "source_config_sha256": "f983ddecb20afbf8fc7ffd2fef01112c3ea9413b6ff2a1ae23cfca71309b693b",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/aa/d2048_l34"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/pll/d512_l6/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/pll_esm150/2025-11-02__01-00-06",
+      "role": "pll scaling model",
+      "source_config_sha256": "63e5a77948464a8abb88ff3c536b9ae08a990fa9a3ce1795657a9b5a1663c43f",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/pll/d512_l6"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_160000.pth",
+        "steps_192000.pth",
+        "steps_224000.pth",
+        "steps_256000.pth",
+        "steps_288000.pth",
+        "steps_32000.pth",
+        "steps_320000.pth",
+        "steps_352000.pth",
+        "steps_384000.pth",
+        "steps_416000.pth",
+        "steps_448000.pth",
+        "steps_480000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth",
+        "steps_96000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/pll/d640_l12/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/pll_esm150/2025-11-02__13-54-07",
+      "role": "pll scaling model",
+      "source_config_sha256": "c0b2248ad12368198acf9c3ce0760ea91381390535d6edb7c58a0497d5b00c4f",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/pll/d640_l12"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_160000.pth",
+        "steps_192000.pth",
+        "steps_224000.pth",
+        "steps_256000.pth",
+        "steps_288000.pth",
+        "steps_32000.pth",
+        "steps_320000.pth",
+        "steps_352000.pth",
+        "steps_384000.pth",
+        "steps_416000.pth",
+        "steps_448000.pth",
+        "steps_480000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth",
+        "steps_96000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/pll/d768_l19/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/pll_esm150/2025-11-03__16-03-32",
+      "role": "pll scaling model",
+      "source_config_sha256": "a7e9c8eda2616cadad32519a28f6b2c301fa57e93847df0710dcae8759dc4cdb",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/pll/d768_l19"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/pll/d1024_l26/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/pll_esm150/2025-11-05__16-52-59",
+      "role": "pll scaling model",
+      "source_config_sha256": "28668d93a24f683a2760bb9bbd8d484853b277f9d19c55867f861f5e94bb6a0e",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/pll/d1024_l26"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/pll/d1536_l27/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/pll_esm150/2025-11-09__01-27-58",
+      "role": "pll scaling model",
+      "source_config_sha256": "fd6c4f9e9bf0b9adf85767b4b7df88c788dc7c7fd114987f5c89e074ec000d27",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/pll/d1536_l27"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/pll/d2048_l34/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/pll_esm150/2025-11-13__21-24-14",
+      "role": "pll scaling model",
+      "source_config_sha256": "c7737eefe265def4e0cc219e74cb3eafdaa40dacbd15a1a04b3cc47ebf8e30c4",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/pll/d2048_l34"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "epoch_3.pth",
+        "epoch_4.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/sll/d640_l12/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-01-18__21-41-29",
+      "role": "sll scaling model",
+      "source_config_sha256": "d98929b5af36eff124a7d8095b57bfc87230c5670a05a34c8e3a45ac7b3cb44f",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/sll/d640_l12"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_2.pth",
+        "epoch_4.pth",
+        "epoch_6.pth",
+        "epoch_8.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_576000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/sll/d768_l19/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-01-19__21-16-32",
+      "role": "sll scaling model",
+      "source_config_sha256": "bb408a271b9dd52bb17bac31bf36efd2a5ebbe913f9476cc01569e22a0ba9c54",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/sll/d768_l19"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_2.pth",
+        "epoch_4.pth",
+        "epoch_6.pth",
+        "epoch_8.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_576000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/sll/d1024_l26/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-01-21__14-09-34",
+      "role": "sll scaling model",
+      "source_config_sha256": "cf705d2e2e455a11c86f052da53763e5207e1baf9e1a61def2384cac20f8f9eb",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/sll/d1024_l26"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_2.pth",
+        "epoch_4.pth",
+        "epoch_6.pth",
+        "epoch_8.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_576000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/sll/d1536_l27/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-01-24__11-35-02",
+      "role": "sll scaling model",
+      "source_config_sha256": "026f82982efc97f2583347695f6187e0f1d99af8151eee56bfec29708effb87b",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/sll/d1536_l27"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_2.pth",
+        "epoch_4.pth",
+        "epoch_6.pth",
+        "epoch_8.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_576000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/sll/d2048_l34/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-01-29__01-10-22",
+      "role": "sll scaling model",
+      "source_config_sha256": "468647b543ba0bdc53aa76bb6aa0bce0c0aa13cadffee74df9e7f0faa6f9226d",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/sll/d2048_l34"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_10.pth",
+        "epoch_2.pth",
+        "epoch_4.pth",
+        "epoch_6.pth",
+        "epoch_8.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_576000.pth",
+        "steps_64000.pth",
+        "steps_640000.pth",
+        "steps_704000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/scaling/sll/d512_l6/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-02-08__04-31-14",
+      "role": "sll scaling model",
+      "source_config_sha256": "4a0f437618cf293bfb17f1199ca1b19abb62b3da8c1ed00b2911d78b5907cd2a",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/scaling/sll/d512_l6"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_2.pth",
+        "epoch_4.pth",
+        "epoch_6.pth",
+        "epoch_8.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_384000.pth",
+        "steps_448000.pth",
+        "steps_512000.pth",
+        "steps_576000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/continuation/plm/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/ablation/condition/amino_acid/2025-12-24__23-09-58",
+      "role": "plm length-conditioned continuation",
+      "source_config_sha256": "28bb56e69fb728397a959b36d7a7a372fb67ebfe432281dab4d7b2e97cfc18c8",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/continuation/plm"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": []
+    },
+    {
+      "file": "ProteinLanguageModel/configs/continuation/pllm/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/ablation/condition/pll_esm150/2025-12-27__13-52-03",
+      "role": "pllm length-conditioned continuation",
+      "source_config_sha256": "b50220df88e7747b69304c2fac562f6b5fd2cbbca8b1d2ef15887d52adaf44e4",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/continuation/pllm"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/uniref50_pll/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/uniref50_pll/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": []
+    },
+    {
+      "file": "ProteinLanguageModel/configs/continuation/sllm/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/structure/2026-02-09__15-50-09",
+      "role": "sllm length-conditioned continuation",
+      "source_config_sha256": "c38e30aa52b5c24c755610b959aef7a2f3dde934b95cb06a662cf3f1746994f0",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/continuation/sllm"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/structure_tokens/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/structure_tokens/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "steps_128000.pth",
+        "steps_64000.pth"
+      ]
+    },
+    {
+      "file": "ProteinLanguageModel/configs/sequence_to_structure/config.yaml",
+      "archive_project": "ProteinLanguageModel",
+      "run": "results/sequence_to_structure/2026-03-21__15-50-45",
+      "role": "E1-conditioned sequence-to-structure training",
+      "source_config_sha256": "8b7e424cdd531dd50904f0a83190d4333fb7160cf7503e6627c1afe575d8f629",
+      "normalized_paths": [
+        {
+          "key": "result_path",
+          "release": "results/sequence_to_structure"
+        },
+        {
+          "key": "train_settings.data_path",
+          "release": "data/sequence_structure/train_set.csv"
+        },
+        {
+          "key": "valid_settings.data_path",
+          "release": "data/sequence_structure/valid_set.csv"
+        }
+      ],
+      "checkpoint_files_present": [
+        "best_valid.pth",
+        "epoch_1.pth",
+        "epoch_2.pth",
+        "steps_128000.pth",
+        "steps_192000.pth",
+        "steps_256000.pth",
+        "steps_320000.pth",
+        "steps_64000.pth"
+      ]
+    }
+  ],
+  "adaptations": [
+    "PLL loads and saves learnable.yaml beside the selected stage config, preserving stochastic Stage 1 versus deterministic Stage 2.",
+    "PLL checkpoint loading explicitly uses the historical weights_only=False behavior for trusted training checkpoints.",
+    "Removed the optional generation-length plotting helper and call. Generation outputs and training are unchanged.",
+    "Language-model training loads the saved vocabulary beside the selected config. Inference loads the vocabulary saved with its checkpoint. This preserves the historical AA alphabet and token IDs.",
+    "Standalone E1-conditioned inference now passes the same sequence-context tensors to generation and token scoring as the archived evaluation path.",
+    "Token scoring unwraps the model before accessing the transformer in distributed inference.",
+    "DeepConf confidence/consensus functions were extracted from the archived evaluator into an inference-only module. No ProteinBench or refolding code was copied.",
+    "The later unmasked attention optimization is opt-in and off for saved paper configs, preserving the historical masked training path.",
+    "Normalized the inference confidence selector to LF line endings and pinned repository text line endings for portable release hashes. No algorithm changes."
+  ],
+  "excluded": [
+    "ProteinBench, refolding/evaluation pipelines, and plotting scripts",
+    "Chemical language models and chemical latent languages",
+    "Later PLL E1, multiscale, VQ-bridge, TiTok, and FP8 experiment configurations",
+    "GCP-VQVAE training and source code (maintained in a separate repository)",
+    "Datasets, trained weights, event logs, and result exports"
+  ],
+  "added_files": [
+    {
+      "file": "ProteinLanguageModel/prepare_pll_decode_input.py",
+      "purpose": "PLLM output to historical PLL decoder CSV adapter"
+    },
+    {
+      "file": "ProteinLanguageModel/inference_select_structures.py",
+      "purpose": "CSV interface to the extracted confidence and token-consensus selector"
+    }
+  ]
+}

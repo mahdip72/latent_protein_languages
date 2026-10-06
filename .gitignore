@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Research outputs and model weights stay outside the source release.
+**/results/
+**/inference_results/
+**/inference_*_results/
+**/chunks/
+*.pth
+*.pt
+*.safetensors
+*.h5
+*.hdf5

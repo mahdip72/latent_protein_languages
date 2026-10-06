@@ -1,0 +1,52 @@
+# Stochastic trajectory example with raw token probabilities and entropy.
+trained_model_dir: results/sequence_to_structure/2026-03-21__15-50-45
+config_filename: config.yaml
+checkpoint_path: checkpoints/steps_64000.pth
+input_csv_path: data/sequences.csv
+output_base_dir: inference_results/sequence_to_structure_samples
+output_csv_filename: predicted_structures.csv
+num_samples: -1
+batch_size: 128
+max_generation_length: 1024
+num_generations_per_sample: 64
+sequence_column_name: Amino Acid Sequence
+condition_tokens:
+  c2n:
+    enabled: false
+  length:
+    enabled: false
+    fixed_value: 128
+sampling:
+  temperature: 1.0
+  filter_logits_fn: top_p
+  filter_kwargs:
+    thres: 0.9
+return_token_probs: true
+return_token_entropy: true
+merge_joiner: ' '
+mixed_precision: bf16
+tqdm_progress_bar: false
+num_workers: 4
+compile_model:
+  enabled: false
+  mode: null
+pll:
+  config_path: ../ProteinLatentLanguage/results/final/stage_2/2025-10-24__21-30-50/config.yaml
+  checkpoint_path: ../ProteinLatentLanguage/results/final/stage_2/2025-10-24__21-30-50/checkpoints/best_valid.pth
+  batch_size: 32
+  mixed_precision: bf16
+vqvae_decode:
+  enabled: false
+  trained_model_dir: ../ProteinLatentLanguage/structure_tokenizer_runs/lite_2025-12-30__18-09-47
+  checkpoint_path: checkpoints/best_valid.pth
+  config_vqvae: config_vqvae.yaml
+  config_encoder: config_gcpnet_encoder.yaml
+  config_decoder: config_geometric_decoder.yaml
+  batch_size: 128
+  shuffle: false
+  num_workers: 4
+  max_length: null
+  compile_model:
+    enabled: true
+    mode: null
+    backend: inductor

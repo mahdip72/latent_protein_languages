@@ -37,7 +37,7 @@ The release contains source code and saved training configurations. Datasets and
 
 Saved configurations retain the recorded training parameters, including model sizes, batch sizes, optimization, and modality settings. Paths have been made portable. New training runs receive new timestamps, so continuation `resume_path` values must point to the checkpoints you actually produced.
 
-See [EXPERIMENTS.md](EXPERIMENTS.md) for the original run mapping, data formats, checkpoint lineage, and the coverage of this source release. [provenance.json](provenance.json) records the archived source revisions, source hashes, configuration origins, and the small release adaptations.
+See [EXPERIMENTS.md](EXPERIMENTS.md) for experiment configurations, training stages, and data and tokenizer compatibility. [provenance.json](provenance.json) records the original run mapping, archived source revisions, source hashes, configuration origins, and release adaptations.
 
 ProteinBench pipelines, external baseline implementations, plotting scripts, chemical-model experiments, and trained result files are outside this repository's scope.
 

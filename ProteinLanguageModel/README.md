@@ -54,7 +54,7 @@ accelerate launch --num_processes 1 train.py --config_path configs/scaling/pll/d
 accelerate launch --num_processes 1 train.py --config_path configs/scaling/sll/d512_l6/config.yaml
 ```
 
-The full grid uses dimensions/layers 512/6, 640/12, 768/19, 1024/26, 1536/27, and 2048/34. The saved AA and PLL runs train for four epochs. The structure runs use eight epochs, with the largest saved config continuing through epoch ten. The SLL scaling milestone is epoch eight. Read [EXPERIMENTS.md](../EXPERIMENTS.md) for the run-level mapping and training differences.
+The full grid uses dimensions/layers 512/6, 640/12, 768/19, 1024/26, 1536/27, and 2048/34. The saved AA and PLL runs train for four epochs. The structure runs use eight epochs, with the largest saved config continuing through epoch ten. The SLL scaling milestone is epoch eight. Read [EXPERIMENTS.md](../EXPERIMENTS.md) for experiment configurations and training stages.
 
 Use `--multi_gpu --num_processes N` for distributed training. The configs specify per-process batches, so preserve the paper's global batch by accounting for GPU count and gradient accumulation. Each run saves its training config, tokenizer vocabulary, logs, and checkpoints. Keep `config.yaml` and `tokenizer_vocab.yaml` with the checkpoint directory when moving trained models.
 
